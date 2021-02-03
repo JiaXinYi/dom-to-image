@@ -2,6 +2,13 @@
 
 [![Build Status](https://travis-ci.org/tsayen/dom-to-image.svg?branch=master)](https://travis-ci.org/tsayen/dom-to-image)
 
+## fork版本
+
+options 新增 fontFamily:string[] 
+传入需要使用的@font-face ，默认过滤所有
+
+yarn grunt --force
+
 ## What is it
 
 **dom-to-image** is a library which can turn arbitrary DOM node into
@@ -121,6 +128,11 @@ for unit testing._
 * * *
 
 ### Rendering options
+
+#### fontFamily
+
+fork新增
+避免下载所有的@font-face，（网页下存在多个自定义font-face，会导致生成速度极慢）
 
 #### filter
 
