@@ -703,11 +703,11 @@
         var cssRules = [];
         styleSheets.forEach(function (sheet) {
           try {
-            util.asArray(sheet.cssRules || []).forEach((rule) => {
+            util.asArray(sheet.cssRules || []).forEach(function(rule) {
               // filter fonts by specific fontFamily to void download all fonts
               if (rule.cssText.indexOf("@font-face") !== -1) {
                 var flag = false;
-                for (let i = 0; domtoimage.impl.options.fontFamily[i]; i++) {
+                for (var i = 0; domtoimage.impl.options.fontFamily[i]; i++) {
                   if (
                     rule.cssText.indexOf(
                       domtoimage.impl.options.fontFamily[i]

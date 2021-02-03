@@ -21,7 +21,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'dist/<%= pkg.name %>.min.js': ['src/dom-to-image.js']
+                    'dist/index.js': ['src/dom-to-image.js']
                 }
             }
         },
@@ -37,5 +37,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('test', ['karma']);
-    grunt.registerTask('default', ['jshint', 'test', 'uglify']);
+    // grunt.registerTask('default', ['jshint', 'test', 'uglify']);
+    grunt.registerTask('default', ['uglify']);
 };

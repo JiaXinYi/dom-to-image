@@ -23,7 +23,7 @@ export interface Options {
   quality?: number;
   imagePlaceholder?: string;
   cachebust?: boolean;
-  fontFamily:[] // 需要使用的@font-face
+  fontFamily?:string[] // 需要使用的@font-face
 }
 
 export const DomToImage: DomToImage;
