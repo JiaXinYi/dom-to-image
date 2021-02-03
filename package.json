@@ -1,5 +1,5 @@
 {
-    "name": "dom-to-image",
+    "name": "@yzfe/dom-to-image",
     "version": "2.6.0",
     "description": "Generates an image from a DOM node using HTML5 canvas and SVG",
     "main": "src/dom-to-image.js",
@@ -25,7 +25,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tsayen/dom-to-image.git"
+        "url": "git+https://github.com/MMF-FE/dom-to-image.git"
     },
     "keywords": [
         "dom",
@@ -41,5 +41,9 @@
     "bugs": {
         "url": "https://github.com/tsayen/dom-to-image/issues"
     },
-    "homepage": "https://github.com/tsayen/dom-to-image#readme"
+    "homepage": "https://github.com/tsayen/dom-to-image#readme",
+    "publishConfig": {
+        "registry":"https://registry.npmjs.org",
+        "access": "public"
+    }
 }
